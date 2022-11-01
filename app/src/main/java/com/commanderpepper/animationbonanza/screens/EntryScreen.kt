@@ -18,9 +18,8 @@ fun EntryScreen(textFieldOnClick: () -> Unit) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.SpaceEvenly) {
         Button(
-            onClick = { textFieldOnClick }) {
+            onClick = { textFieldOnClick() }) {
             Text(text = "Text Field", color = Color.White, style = LocalTextStyle.current, textDecoration = TextDecoration.Underline)
         }
-        TextFields()
     }
 }
