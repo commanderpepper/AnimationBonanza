@@ -9,6 +9,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextDecoration
 
 @Composable
@@ -18,7 +19,8 @@ fun EntryScreen(textFieldOnClick: () -> Unit) {
         verticalArrangement = Arrangement.SpaceEvenly) {
         Button(
             onClick = { textFieldOnClick }) {
-            Text(text = "Text Field", style = LocalTextStyle.current, textDecoration = TextDecoration.Underline)
+            Text(text = "Text Field", color = Color.White, style = LocalTextStyle.current, textDecoration = TextDecoration.Underline)
         }
+        TextFields()
     }
 }
